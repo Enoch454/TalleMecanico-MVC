@@ -1,0 +1,62 @@
+﻿@model TallerMecanico.Models.Carros
+
+@{
+    ViewBag.Title = "Delete";
+}
+<br />
+<h3 class="text-center text-danger" >¿Estas seguro de liberar este carro?</h3>
+<br />
+<div>
+    <hr />
+    <div class="form-group row">
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Marca)
+            @Html.EditorFor(model => model.Marca, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Modelo)
+            @Html.EditorFor(model => model.Modelo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Color)
+            @Html.EditorFor(model => model.Color, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.codigo)
+            @Html.EditorFor(model => model.codigo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.DescripcionDetalles)
+            @Html.EditorFor(model => model.DescripcionDetalles, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+        <div class="col-6">
+            @**@Empleado
+            @Html.EditorFor(model => model.Usuarios.Usuario, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            @**@Administrador
+            @Html.EditorFor(model => model.Usuarios1.Usuario, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Estado.Estado1)
+            @Html.EditorFor(model => model.Estado.Estado1, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group row text-center">
+        <div class="col-12">
+            <input type="submit" value="Liberar" class="btn btn-warning" /> 
+            @Html.ActionLink("Regresar a evidencias", "Index", null,null, new { @class="btn btn-secondary" })
+        </div>
+    </div>
+}

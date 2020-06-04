@@ -1,0 +1,42 @@
+﻿@model TallerMecanico.Models.Usuarios
+
+@{
+    ViewBag.Title = "Registro";
+}
+<br /><br />
+<div class="container">
+    <div class="row justify-content-center" >
+        <div class="col-6">
+            <div class="border border-secondary card bg-write text-danger">
+                <div class="card bg-success text-warning card-header text-center">
+                    <h4> Registro de usuarios </h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+                                <hr />
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.LabelFor(model => model.Usuario, htmlAttributes: new { @class = "control-label col-md-3" })
+                                @Html.EditorFor(model => model.Usuario, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Usuario, "", new { @class = "text-danger" })
+                                <br />
+                                @Html.LabelFor(model => model.Pwd, htmlAttributes: new { @class = "control-label col-md-3" })
+                                @Html.EditorFor(model => model.Pwd, new { htmlAttributes = new { @class = "form-control", @type="password" } })
+                                @Html.ValidationMessageFor(model => model.Pwd, "", new { @class = "text-danger" })
+                                <br />
+                                @Html.LabelFor(model => model.IdRol, "IdRol", htmlAttributes: new { @class = "control-label col-md-3 hidden" })                                    
+                                @Html.DropDownList("IdRol", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.IdRol, "", new { @class = "text-danger" })
+                                <br /> 
+                                <input type="submit" value="Registrar" class="btn btn-primary btn-md btn-block btn btn-success"/>                                    
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

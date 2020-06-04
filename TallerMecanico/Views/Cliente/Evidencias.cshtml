@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TallerMecanico.Models.Evidencias>
+
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<h2 class="text-center">Ver evidencias</h2>
+<br />
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Carros.Marca)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comentarios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.foto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Carros.Marca)
+            </td>
+        </tr>
+    }
+</table>
+<br />
+<div class="form-group row text-center">
+    <div class="col-12">
+        @Html.ActionLink("Regresar al inicio", "Index", null, null, new { @class = "btn btn-secondary" })
+    </div>
+</div>

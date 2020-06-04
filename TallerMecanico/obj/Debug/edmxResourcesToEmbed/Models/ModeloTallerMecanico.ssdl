@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Taller_Mecanico2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Carros">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Marca" Type="varchar" MaxLength="15" />
+    <Property Name="Modelo" Type="varchar" MaxLength="15" />
+    <Property Name="Color" Type="varchar" MaxLength="15" />
+    <Property Name="codigo" Type="varchar" MaxLength="300" />
+    <Property Name="DescripcionDetalles" Type="varchar" MaxLength="100" />
+    <Property Name="IdEstado" Type="int" />
+    <Property Name="Id_Cliente" Type="int" />
+    <Property Name="Id_Empleado" Type="int" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Estado1" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Evidencias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Comentarios" Type="varchar" MaxLength="500" />
+    <Property Name="foto" Type="varbinary(max)" />
+    <Property Name="Id_Carro" Type="int" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Rol" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="10" />
+    <Property Name="Pwd" Type="varchar" MaxLength="15" />
+    <Property Name="IdRol" Type="int" />
+    <Property Name="IdEstado" Type="int" />
+  </EntityType>
+  <Association Name="fk_carros_clientes">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Carros" Type="Self.Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carros">
+        <PropertyRef Name="Id_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_carros_empleados">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Carros" Type="Self.Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carros">
+        <PropertyRef Name="Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_carros_estado">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+    <End Role="Carros" Type="Self.Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carros">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_estado">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_evidencias_carros">
+    <End Role="Carros" Type="Self.Carros" Multiplicity="0..1" />
+    <End Role="Evidencias" Type="Self.Evidencias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carros">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Evidencias">
+        <PropertyRef Name="Id_Carro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rol">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Taller_Mecanico2ModelStoreContainer">
+    <EntitySet Name="Carros" EntityType="Self.Carros" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estado" EntityType="Self.Estado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Evidencias" EntityType="Self.Evidencias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_carros_clientes" Association="Self.fk_carros_clientes">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Carros" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="fk_carros_empleados" Association="Self.fk_carros_empleados">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Carros" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="fk_carros_estado" Association="Self.fk_carros_estado">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="Carros" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="fk_estado" Association="Self.fk_estado">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="fk_evidencias_carros" Association="Self.fk_evidencias_carros">
+      <End Role="Carros" EntitySet="Carros" />
+      <End Role="Evidencias" EntitySet="Evidencias" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rol" Association="Self.fk_rol">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

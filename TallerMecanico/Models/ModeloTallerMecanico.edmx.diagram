@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6025fbb859254ff0a082890ad221c75c" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="Taller_Mecanico2Model.Carros" Width="1.5" PointX="5.25" PointY="2.875" />
+        <EntityTypeShape EntityType="Taller_Mecanico2Model.Estado" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Taller_Mecanico2Model.Evidencias" Width="1.5" PointX="7.5" PointY="3.625" />
+        <EntityTypeShape EntityType="Taller_Mecanico2Model.Roles" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="Taller_Mecanico2Model.Usuarios" Width="1.5" PointX="3" PointY="3.25" />
+        <AssociationConnector Association="Taller_Mecanico2Model.fk_carros_clientes" />
+        <AssociationConnector Association="Taller_Mecanico2Model.fk_carros_empleados" />
+        <AssociationConnector Association="Taller_Mecanico2Model.fk_carros_estado" />
+        <AssociationConnector Association="Taller_Mecanico2Model.fk_evidencias_carros" />
+        <AssociationConnector Association="Taller_Mecanico2Model.fk_estado" />
+        <AssociationConnector Association="Taller_Mecanico2Model.fk_rol" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

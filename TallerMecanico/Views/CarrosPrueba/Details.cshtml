@@ -1,0 +1,82 @@
+﻿@model TallerMecanico.Models.Carros
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Carros</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionDetalles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionDetalles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuarios.Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuarios.Usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuarios1.Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuarios1.Usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado.Estado1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado.Estado1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

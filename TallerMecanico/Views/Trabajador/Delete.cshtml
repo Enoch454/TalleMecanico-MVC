@@ -1,0 +1,51 @@
+﻿@model TallerMecanico.Models.Evidencias
+
+@{
+    ViewBag.Title = "Delete";
+}
+<br />
+<h3 class="text-center text-danger">¿Estas seguro que deceas eliminar esta evidencia?</h3>
+<div>
+    <hr />
+    <div class="form-group row">
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Fecha)
+            @Html.EditorFor(model => model.Fecha, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Comentarios)
+            @Html.EditorFor(model => model.Comentarios, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Fecha)
+            @Html.EditorFor(model => model.Fecha, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Comentarios)
+            @Html.EditorFor(model => model.Comentarios, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.foto)
+            @*Html.DisplayFor(model => model.foto)*@
+        </div>
+        <div class="col-6">
+            @Html.DisplayNameFor(model => model.Carros.Marca)
+            @Html.EditorFor(model => model.Carros.Marca, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group row text-center">
+        <div class="col-12">
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+            @Html.ActionLink("Regresar a evidencias", "Index", null, null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+}

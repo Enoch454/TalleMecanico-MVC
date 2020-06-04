@@ -1,0 +1,38 @@
+﻿@model TallerMecanico.Models.Usuarios
+@{
+    ViewBag.Title = "Login";
+}
+<div class="container">
+    <div class="row justify-content-center" style="margin:0.7rem">
+        <div class="col-4">
+            <div class="border border-primary card bg-write text-danger">
+                <div class="card bg-primary text-white card-header text-center">
+                    <h4> Iniciar Sesión </h4>
+                </div>
+                <div>
+                    <img src="../Imagenes/login.png" class="rounded mx-auto d-block" />
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.DisplayNameFor(x => x.Usuario)
+                                @Html.EditorFor(x => x.Usuario, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(x => x.Usuario, null, new { @class = "text-danger" })
+                                <br />
+                                @Html.DisplayNameFor(x => x.Pwd)
+                                @Html.EditorFor(x => x.Pwd, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+                                @Html.ValidationMessageFor(x => x.Pwd, null, new { @class = "text-danger" })
+                                <br />
+                                <input class="btn btn-primary btn-md btn-block btn btn-success" type="submit" value="Iniciar Sesión">
+                                @Html.ActionLink("Registrar Usuario", "RegistrarUsuario", null, new { @class = "btn btn-success btn-md btn-block btn btn-info" })
+                            }
+                        </div>
+                    </div>
+                    <h2 class="text-danger">@ViewBag.Error</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

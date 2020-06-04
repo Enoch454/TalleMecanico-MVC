@@ -1,0 +1,75 @@
+﻿@model IEnumerable<TallerMecanico.Models.Carros>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescripcionDetalles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuarios.Usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuarios1.Usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado.Estado1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescripcionDetalles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuarios.Usuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuarios1.Usuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado.Estado1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

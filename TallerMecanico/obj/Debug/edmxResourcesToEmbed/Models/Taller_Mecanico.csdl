@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Taller_MecanicoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Taller_MecanicoEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Carros" EntityType="Taller_MecanicoModel.Carros" />
+    <EntitySet Name="Estado" EntityType="Taller_MecanicoModel.Estado" />
+    <EntitySet Name="Evidencias" EntityType="Taller_MecanicoModel.Evidencias" />
+    <EntitySet Name="Roles" EntityType="Taller_MecanicoModel.Roles" />
+    <EntitySet Name="Usuarios" EntityType="Taller_MecanicoModel.Usuarios" />
+    <AssociationSet Name="fk_carros_clientes" Association="Taller_MecanicoModel.fk_carros_clientes">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Carros" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="fk_carros_empleados" Association="Taller_MecanicoModel.fk_carros_empleados">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Carros" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="fk_carros_estado" Association="Taller_MecanicoModel.fk_carros_estado">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="Carros" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="fk_evidencias_carros" Association="Taller_MecanicoModel.fk_evidencias_carros">
+      <End Role="Carros" EntitySet="Carros" />
+      <End Role="Evidencias" EntitySet="Evidencias" />
+    </AssociationSet>
+    <AssociationSet Name="fk_estado" Association="Taller_MecanicoModel.fk_estado">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rol" Association="Taller_MecanicoModel.fk_rol">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Carros">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Marca" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Modelo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Color" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="codigo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionDetalles" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdEstado" Type="Int32" />
+    <Property Name="Id_Cliente" Type="Int32" />
+    <Property Name="Id_Empleado" Type="Int32" />
+    <NavigationProperty Name="Usuarios" Relationship="Taller_MecanicoModel.fk_carros_clientes" FromRole="Carros" ToRole="Usuarios" />
+    <NavigationProperty Name="Usuarios1" Relationship="Taller_MecanicoModel.fk_carros_empleados" FromRole="Carros" ToRole="Usuarios" />
+    <NavigationProperty Name="Estado" Relationship="Taller_MecanicoModel.fk_carros_estado" FromRole="Carros" ToRole="Estado" />
+    <NavigationProperty Name="Evidencias" Relationship="Taller_MecanicoModel.fk_evidencias_carros" FromRole="Carros" ToRole="Evidencias" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Estado1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Carros" Relationship="Taller_MecanicoModel.fk_carros_estado" FromRole="Estado" ToRole="Carros" />
+    <NavigationProperty Name="Usuarios" Relationship="Taller_MecanicoModel.fk_estado" FromRole="Estado" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Evidencias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Comentarios" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Id_Carro" Type="Int32" />
+    <NavigationProperty Name="Carros" Relationship="Taller_MecanicoModel.fk_evidencias_carros" FromRole="Evidencias" ToRole="Carros" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Rol" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Usuarios" Relationship="Taller_MecanicoModel.fk_rol" FromRole="Roles" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Pwd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="IdRol" Type="Int32" />
+    <Property Name="IdEstado" Type="Int32" />
+    <NavigationProperty Name="Carros" Relationship="Taller_MecanicoModel.fk_carros_clientes" FromRole="Usuarios" ToRole="Carros" />
+    <NavigationProperty Name="Carros1" Relationship="Taller_MecanicoModel.fk_carros_empleados" FromRole="Usuarios" ToRole="Carros" />
+    <NavigationProperty Name="Estado" Relationship="Taller_MecanicoModel.fk_estado" FromRole="Usuarios" ToRole="Estado" />
+    <NavigationProperty Name="Roles" Relationship="Taller_MecanicoModel.fk_rol" FromRole="Usuarios" ToRole="Roles" />
+  </EntityType>
+  <Association Name="fk_carros_clientes">
+    <End Type="Taller_MecanicoModel.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+    <End Type="Taller_MecanicoModel.Carros" Role="Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carros">
+        <PropertyRef Name="Id_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_carros_empleados">
+    <End Type="Taller_MecanicoModel.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+    <End Type="Taller_MecanicoModel.Carros" Role="Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carros">
+        <PropertyRef Name="Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_carros_estado">
+    <End Type="Taller_MecanicoModel.Estado" Role="Estado" Multiplicity="0..1" />
+    <End Type="Taller_MecanicoModel.Carros" Role="Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carros">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_evidencias_carros">
+    <End Type="Taller_MecanicoModel.Carros" Role="Carros" Multiplicity="0..1" />
+    <End Type="Taller_MecanicoModel.Evidencias" Role="Evidencias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carros">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Evidencias">
+        <PropertyRef Name="Id_Carro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_estado">
+    <End Type="Taller_MecanicoModel.Estado" Role="Estado" Multiplicity="0..1" />
+    <End Type="Taller_MecanicoModel.Usuarios" Role="Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rol">
+    <End Type="Taller_MecanicoModel.Roles" Role="Roles" Multiplicity="0..1" />
+    <End Type="Taller_MecanicoModel.Usuarios" Role="Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

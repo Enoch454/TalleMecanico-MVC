@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Taller_Mecanico2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Carros">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Marca" Type="varchar" MaxLength="15" />
+          <Property Name="Modelo" Type="varchar" MaxLength="15" />
+          <Property Name="Color" Type="varchar" MaxLength="15" />
+          <Property Name="codigo" Type="varchar" MaxLength="300" />
+          <Property Name="DescripcionDetalles" Type="varchar" MaxLength="100" />
+          <Property Name="IdEstado" Type="int" />
+          <Property Name="Id_Cliente" Type="int" />
+          <Property Name="Id_Empleado" Type="int" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Estado1" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Evidencias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" />
+          <Property Name="Comentarios" Type="varchar" MaxLength="500" />
+          <Property Name="foto" Type="varbinary(max)" />
+          <Property Name="Id_Carro" Type="int" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Rol" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Usuario" Type="varchar" MaxLength="10" />
+          <Property Name="Pwd" Type="varchar" MaxLength="15" />
+          <Property Name="IdRol" Type="int" />
+          <Property Name="IdEstado" Type="int" />
+        </EntityType>
+        <Association Name="fk_carros_clientes">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="Carros" Type="Self.Carros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carros">
+              <PropertyRef Name="Id_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_carros_empleados">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="Carros" Type="Self.Carros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carros">
+              <PropertyRef Name="Id_Empleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_carros_estado">
+          <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+          <End Role="Carros" Type="Self.Carros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carros">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_estado">
+          <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_evidencias_carros">
+          <End Role="Carros" Type="Self.Carros" Multiplicity="0..1" />
+          <End Role="Evidencias" Type="Self.Evidencias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carros">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Evidencias">
+              <PropertyRef Name="Id_Carro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_rol">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Taller_Mecanico2ModelStoreContainer">
+          <EntitySet Name="Carros" EntityType="Self.Carros" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Estado" EntityType="Self.Estado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Evidencias" EntityType="Self.Evidencias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_carros_clientes" Association="Self.fk_carros_clientes">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Carros" EntitySet="Carros" />
+          </AssociationSet>
+          <AssociationSet Name="fk_carros_empleados" Association="Self.fk_carros_empleados">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Carros" EntitySet="Carros" />
+          </AssociationSet>
+          <AssociationSet Name="fk_carros_estado" Association="Self.fk_carros_estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Carros" EntitySet="Carros" />
+          </AssociationSet>
+          <AssociationSet Name="fk_estado" Association="Self.fk_estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="fk_evidencias_carros" Association="Self.fk_evidencias_carros">
+            <End Role="Carros" EntitySet="Carros" />
+            <End Role="Evidencias" EntitySet="Evidencias" />
+          </AssociationSet>
+          <AssociationSet Name="fk_rol" Association="Self.fk_rol">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Taller_Mecanico2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Taller_Mecanico2Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Carros" EntityType="Taller_Mecanico2Model.Carros" />
+          <EntitySet Name="Estado" EntityType="Taller_Mecanico2Model.Estado" />
+          <EntitySet Name="Evidencias" EntityType="Taller_Mecanico2Model.Evidencias" />
+          <EntitySet Name="Roles" EntityType="Taller_Mecanico2Model.Roles" />
+          <EntitySet Name="Usuarios" EntityType="Taller_Mecanico2Model.Usuarios" />
+          <AssociationSet Name="fk_carros_clientes" Association="Taller_Mecanico2Model.fk_carros_clientes">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Carros" EntitySet="Carros" />
+          </AssociationSet>
+          <AssociationSet Name="fk_carros_empleados" Association="Taller_Mecanico2Model.fk_carros_empleados">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Carros" EntitySet="Carros" />
+          </AssociationSet>
+          <AssociationSet Name="fk_carros_estado" Association="Taller_Mecanico2Model.fk_carros_estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Carros" EntitySet="Carros" />
+          </AssociationSet>
+          <AssociationSet Name="fk_evidencias_carros" Association="Taller_Mecanico2Model.fk_evidencias_carros">
+            <End Role="Carros" EntitySet="Carros" />
+            <End Role="Evidencias" EntitySet="Evidencias" />
+          </AssociationSet>
+          <AssociationSet Name="fk_estado" Association="Taller_Mecanico2Model.fk_estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="fk_rol" Association="Taller_Mecanico2Model.fk_rol">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Carros">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Marca" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Modelo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Color" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="codigo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="DescripcionDetalles" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IdEstado" Type="Int32" />
+          <Property Name="Id_Cliente" Type="Int32" />
+          <Property Name="Id_Empleado" Type="Int32" />
+          <NavigationProperty Name="Usuarios" Relationship="Taller_Mecanico2Model.fk_carros_clientes" FromRole="Carros" ToRole="Usuarios" />
+          <NavigationProperty Name="Usuarios1" Relationship="Taller_Mecanico2Model.fk_carros_empleados" FromRole="Carros" ToRole="Usuarios" />
+          <NavigationProperty Name="Estado" Relationship="Taller_Mecanico2Model.fk_carros_estado" FromRole="Carros" ToRole="Estado" />
+          <NavigationProperty Name="Evidencias" Relationship="Taller_Mecanico2Model.fk_evidencias_carros" FromRole="Carros" ToRole="Evidencias" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Estado1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Carros" Relationship="Taller_Mecanico2Model.fk_carros_estado" FromRole="Estado" ToRole="Carros" />
+          <NavigationProperty Name="Usuarios" Relationship="Taller_Mecanico2Model.fk_estado" FromRole="Estado" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Evidencias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha" Type="DateTime" Precision="3" />
+          <Property Name="Comentarios" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Id_Carro" Type="Int32" />
+          <NavigationProperty Name="Carros" Relationship="Taller_Mecanico2Model.fk_evidencias_carros" FromRole="Evidencias" ToRole="Carros" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Rol" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Usuarios" Relationship="Taller_Mecanico2Model.fk_rol" FromRole="Roles" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Pwd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="IdRol" Type="Int32" />
+          <Property Name="IdEstado" Type="Int32" />
+          <NavigationProperty Name="Carros" Relationship="Taller_Mecanico2Model.fk_carros_clientes" FromRole="Usuarios" ToRole="Carros" />
+          <NavigationProperty Name="Carros1" Relationship="Taller_Mecanico2Model.fk_carros_empleados" FromRole="Usuarios" ToRole="Carros" />
+          <NavigationProperty Name="Estado" Relationship="Taller_Mecanico2Model.fk_estado" FromRole="Usuarios" ToRole="Estado" />
+          <NavigationProperty Name="Roles" Relationship="Taller_Mecanico2Model.fk_rol" FromRole="Usuarios" ToRole="Roles" />
+        </EntityType>
+        <Association Name="fk_carros_clientes">
+          <End Type="Taller_Mecanico2Model.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+          <End Type="Taller_Mecanico2Model.Carros" Role="Carros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carros">
+              <PropertyRef Name="Id_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_carros_empleados">
+          <End Type="Taller_Mecanico2Model.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+          <End Type="Taller_Mecanico2Model.Carros" Role="Carros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carros">
+              <PropertyRef Name="Id_Empleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_carros_estado">
+          <End Type="Taller_Mecanico2Model.Estado" Role="Estado" Multiplicity="0..1" />
+          <End Type="Taller_Mecanico2Model.Carros" Role="Carros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carros">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_evidencias_carros">
+          <End Type="Taller_Mecanico2Model.Carros" Role="Carros" Multiplicity="0..1" />
+          <End Type="Taller_Mecanico2Model.Evidencias" Role="Evidencias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carros">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Evidencias">
+              <PropertyRef Name="Id_Carro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_estado">
+          <End Type="Taller_Mecanico2Model.Estado" Role="Estado" Multiplicity="0..1" />
+          <End Type="Taller_Mecanico2Model.Usuarios" Role="Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_rol">
+          <End Type="Taller_Mecanico2Model.Roles" Role="Roles" Multiplicity="0..1" />
+          <End Type="Taller_Mecanico2Model.Usuarios" Role="Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Taller_Mecanico2ModelStoreContainer" CdmEntityContainer="Taller_Mecanico2Entities">
+          <EntitySetMapping Name="Carros">
+            <EntityTypeMapping TypeName="Taller_Mecanico2Model.Carros">
+              <MappingFragment StoreEntitySet="Carros">
+                <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
+                <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="DescripcionDetalles" ColumnName="DescripcionDetalles" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estado">
+            <EntityTypeMapping TypeName="Taller_Mecanico2Model.Estado">
+              <MappingFragment StoreEntitySet="Estado">
+                <ScalarProperty Name="Estado1" ColumnName="Estado1" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Evidencias">
+            <EntityTypeMapping TypeName="Taller_Mecanico2Model.Evidencias">
+              <MappingFragment StoreEntitySet="Evidencias">
+                <ScalarProperty Name="Id_Carro" ColumnName="Id_Carro" />
+                <ScalarProperty Name="foto" ColumnName="foto" />
+                <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="Taller_Mecanico2Model.Roles">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="Taller_Mecanico2Model.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,302 @@
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll.config
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\TallerMecanico.pdb
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe.config
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csc.rsp
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe.config
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csi.rsp
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.AppContext.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Console.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Http.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.ValueTuple.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe.config
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\vbc.rsp
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Razor.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Razor.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csproj.CopyComplete
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.dll
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.pdb
+C:\Users\Julio\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csprojAssemblyReference.cache
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll.config
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\TallerMecanico.pdb
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe.config
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\csc.rsp
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe.config
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\csi.rsp
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.AppContext.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Console.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Http.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.ValueTuple.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe.config
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\vbc.rsp
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\EntityFramework.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Razor.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\EntityFramework.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Razor.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csprojAssemblyReference.cache
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csproj.CoreCompileInputs.cache
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csproj.CopyComplete
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.dll
+C:\Users\Karen\Pictures\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.pdb
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll.config
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\TallerMecanico.pdb
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe.config
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csc.rsp
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe.config
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\csi.rsp
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.AppContext.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Console.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Http.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.ValueTuple.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe.config
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\vbc.rsp
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Razor.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Razor.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csprojAssemblyReference.cache
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csproj.CoreCompileInputs.cache
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csproj.CopyComplete
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.dll
+C:\Users\Karen\source\repos\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.pdb
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll.config
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\TallerMecanico.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\TallerMecanico.pdb
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\csc.exe.config
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\csc.rsp
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\csi.exe.config
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\csi.rsp
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.AppContext.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Collections.Immutable.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Console.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Globalization.Calendars.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Http.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Net.Sockets.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Reflection.Metadata.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.ValueTuple.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\vbc.exe.config
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\vbc.rsp
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\roslyn\VBCSCompiler.exe.config
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\EntityFramework.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\Microsoft.Web.Infrastructure.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Razor.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\EntityFramework.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\EntityFramework.SqlServer.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Razor.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Deployment.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Webpages.Razor.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Helpers.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\System.Web.Mvc.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csprojAssemblyReference.cache
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.csproj.CopyComplete
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.dll
+D:\Documents\Ing\6to semestre\Programacion WEB\TallerMecanico-Karen\TallerMecanico (1)\TallerMecanico\TallerMecanico\obj\Debug\TallerMecanico.pdb

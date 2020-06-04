@@ -1,0 +1,76 @@
+﻿@model TallerMecanico.Models.Carros
+
+@{
+    ViewBag.Title = "Edit";
+}
+<br />
+<div class="border border-secondary card bg-write text-danger">
+    <div class="card bg-success text-warning card-header text-center">
+        <h3 class="text-center"> Editar Carro</h3>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-black" })
+            @Html.HiddenFor(model => model.Id)
+            <div class="form-group row">
+                <div class="col-6">
+                    @Html.LabelFor(model => model.Marca, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.Marca, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Marca, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-6">
+                    @Html.LabelFor(model => model.Modelo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.Modelo, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Modelo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    @Html.LabelFor(model => model.Color, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.Color, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-6">
+                    @Html.LabelFor(model => model.codigo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.codigo, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.codigo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    @Html.LabelFor(model => model.DescripcionDetalles, htmlAttributes: new { @class = "control-label col-md-8" })
+                    @Html.EditorFor(model => model.DescripcionDetalles, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DescripcionDetalles, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-6">
+                    @Html.LabelFor(model => model.IdEstado, "IdEstado", htmlAttributes: new { @class = "control-label col-md-8" })
+                    @Html.DropDownList("IdEstado", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.IdEstado, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    @Html.LabelFor(model => model.Id_Cliente, "Id_Cliente", htmlAttributes: new { @class = "control-label col-md-8" })
+                    @Html.DropDownList("Id_Cliente", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Id_Cliente, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-6">
+                    @Html.LabelFor(model => model.Id_Empleado, "Id_Empleado", htmlAttributes: new { @class = "control-label col-md-8" })
+                    @Html.DropDownList("Id_Empleado", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Id_Empleado, "", new { @class = "text-danger" })
+                </div>
+            </div>  
+        </div>
+        <div class="form-group row text-center">
+            <div class="col-12">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+                @Html.ActionLink("Regresar al inicio", "Index", null, null, new { @class = "btn btn-secondary" })
+            </div>
+        </div>
+        }
+    </div>
+</div>
