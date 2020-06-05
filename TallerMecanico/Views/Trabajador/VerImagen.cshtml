@@ -1,32 +1,45 @@
-﻿@model IEnumerable<TallerMecanico.Models.Evidencias>
+﻿@model TallerMecanico.Models.Evidencias
+
 @{
     ViewBag.Title = "VerImagen";
 }
+
 <br />
-<h2>VerImagen</h2>
+<h2>Ver Imagen</h2>
 <br />
 <div class="container-fluid">
     <div class="row">
-        @foreach (var item in Model)
-        {
-            if (item.Id == @item.Id)
-            {
-                <div class="col-12">
-                    <div class="card-columns-fluid text-center">
-                        <div class="card bg-light" style="width:40rem;">
-                            <div class="card-body">
-                                <hp class="card-text h4">Fecha:@item.Fecha </hp>
-                                <br />
-                                <hp class="card-text h4"> Comentario: @item.Comentarios</hp>
-                                <br />
-                                <hp class="card-text h4"> Carro: @item.Carros.Marca</hp>
-                                <img class="card-img-top" src="@Url.Action("GetImg", new { id = @item.Id })"
-                                     alt="Image" height="300" width="300" />
-                            </div>
-                        </div>
+        <div class="col-12">
+            <div class="card-columns-fluid text-center">
+                <div class="card bg-light" style="width:40rem;">
+                    <div class="card-body">
+                        <hp class="card-text h4">
+                            Fecha: 
+                            @Model.Fecha
+                        </hp>
+                        <br />
+                        <hp class="card-text h4">
+                            Comentario: 
+                            @Model.Comentarios
+                        </hp>
+                        <br />
+                        <hp class="card-text h4">
+                            Carro: 
+                            @Model.Carros.Marca |
+                            @Model.Carros.Modelo
+                        </hp>
+                        <img class="card-img-top" src="@Url.Action("GetImg", new { id = @Model.Id })"
+                                alt="Image" height="300" width="300" />
                     </div>
                 </div>
-            }
-        }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <br />
+            <br />
+            @Html.ActionLink("Volver", "Evidencias", new { id = Model.Carros.Id }, new { @class = "btn btn-info" })
+        </div>
     </div>
 </div>

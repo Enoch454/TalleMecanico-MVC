@@ -229,12 +229,14 @@ namespace TallerMecanico.Controllers
             }
         }
         
-        public ActionResult VerImagen() {
+        public ActionResult VerImagen(int id) {
             //var foto = db.Evidencias.Where(x => x.foto == x.foto);
             // Path.GetFileName(foto.GetImg);
             //ViewBag.Id_Carro = new SelectList(db.Evidencias, "Id", "foto"); 
 
-            return View(db.Evidencias.ToList());        
+            Evidencias evidencias = db.Evidencias.Find(id);
+
+            return View(evidencias);        
         }
     }
 }
